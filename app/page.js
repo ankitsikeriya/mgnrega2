@@ -88,7 +88,7 @@ export default function Home() {
         <SelectStateDistrict state={sel.state} district={sel.district} onChange={setSel} />
       </section>
 
-      <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"> 
         <MetricCard titleEn="Total Households Worked" titleHi="कुल कार्यरत परिवार" value={data?.metrics?.totalHouseholdsWorked} ratio={(data?.metrics?.averageDaysEmployment ?? 0) / 100} />
         <MetricCard titleEn="Wages Disbursed" titleHi="वितरित मजदूरी" value={data?.metrics?.wagesDisbursed} ratio={(data?.metrics?.wagesDisbursed ?? 0) > 0 ? 0.7 : 0.2} />
         <MetricCard titleEn="Total Person-Days" titleHi="कुल मानव-दिवस" value={data?.metrics?.totalPersonDays} ratio={(data?.metrics?.totalPersonDays ?? 0) > 0 ? 0.6 : 0.2} />
