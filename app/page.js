@@ -10,7 +10,7 @@ function usePerformance(state, district) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!state || !district) {
+    if (!state || !district) {   
       setData(null);
       setError(null);
       return;
