@@ -51,7 +51,7 @@ export default function Home() {
     if (!m) return [];
     return [
       { name: "Households", value: m.totalHouseholdsWorked },
-      { name: "Wages", value: m.wagesDisbursed },
+      { name: "Wages", value: m.wagesDisbursed }, 
       { name: "Person-Days", value: m.totalPersonDays },
       { name: "Avg Days", value: m.averageDaysEmployment },
     ];
